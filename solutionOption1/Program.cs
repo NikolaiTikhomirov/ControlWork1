@@ -27,3 +27,10 @@ for (int i = 0; i < firstArrayLength; i++)
         secondArray[j] = firstArray[i]; j++;
     }
 }
+
+PrintArray(secondArray);
+
+void PrintArray(string[] col)
+{
+    Console.WriteLine($"[{string.Join(", ", col)}]");
+}
