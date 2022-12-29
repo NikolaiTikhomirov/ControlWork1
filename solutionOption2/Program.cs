@@ -34,5 +34,5 @@ void FillArray (string [] array)
 }
 void PrintArray(string[] col)
 {
-    Console.WriteLine($"[{string.Join(", ", col)}]");
+    Console.WriteLine($"[{string.Join(", ", col.Where(s => !string.IsNullOrEmpty(s)))}]");
 }
