@@ -18,3 +18,12 @@ for (int i = 0; i < firstArrayLength; i++)
 {
     if (firstArray[i].Length <= 3 && firstArray[i].Length > 0) secondArrayLength = secondArrayLength + 1;
 }
+string[] secondArray = new string[secondArrayLength];
+int j = 0;
+for (int i = 0; i < firstArrayLength; i++)
+{
+    if (firstArray[i].Length <= 3 && firstArray[i].Length > 0)
+    {
+        secondArray[j] = firstArray[i]; j++;
+    }
+}
